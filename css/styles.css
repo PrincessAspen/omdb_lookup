@@ -1,0 +1,146 @@
+body {
+    background-image: url("backdrop.jpg");
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#root {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+}
+
+#infoSpot {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form {
+    margin: 20px;
+}
+
+label {
+    font-size: 1.2rem;
+    color: goldenrod;
+    margin: 20px;
+    display: block;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: goldenrod;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+#infoSpot {
+    margin-top: 20px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px black;
+}
+
+h1 {
+    font-size: 2rem;
+    color: gold;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: lightgoldenrodyellow;
+}
+
+/* Responsive Design */
+@media only screen and (max-device-width: 767px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    figure img {
+        max-width: 200px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1224px) {
+    body {
+        height: 100vh;
+    }
+
+    input {
+        width: 60%;
+    }
+
+    figure img {
+        max-width: 250px;
+    }
+}
